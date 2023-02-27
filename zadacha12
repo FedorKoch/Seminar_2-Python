@@ -1,0 +1,12 @@
+print("Введите сумму чисел")
+s = int(input())
+print("Введите произведение чисел чисел")
+p = int(input())
+n = 0
+for i in range(1000):
+    for j in range(1000):
+        if s == i + j and p == i * j:
+            n = n + 1
+            print(i, j)
+if n == 0:
+    print("таких пар чисел не существует")
