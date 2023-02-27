@@ -1,0 +1,17 @@
+print("Введите число монет")
+n = int(input())
+orel = 0
+reshka = 0
+for i in range(n):
+    print("Введите сторону монеты(орел - 0, решка - 1)")
+    moneta = int(input())
+    if moneta == 0:
+        orel = orel + 1
+    else:
+        reshka = reshka + 1
+if reshka >= orel:
+    print("нужно перевернуть монеты с орлом: ")
+    print(orel)
+else:
+    print("нужно перевернуть монеты с решкой: ")
+    print(reshka)
